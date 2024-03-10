@@ -25,7 +25,7 @@ const Form = () => {
     setSource(data.source);
 
     axios
-      .post("http://127.0.0.1:5000/pathFinder", data)
+      .post("https://rapid-route-dusky.vercel.app/pathFinder", data)
       .then((res) => {
         console.log(res);
         const formattedDistance = Number(res.data.shortest_distance).toFixed(2); //ccccc.
